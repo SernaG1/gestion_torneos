@@ -1,0 +1,52 @@
+1-gestion de torneos de futnbol
+2-equipos
+3-resultados
+4-posiciones
+5-jugadores 
+6-partidos
+
+Diagrama de clases hecho:
+
+diagrama de casos de uso hecho
+(inicia con verbo en infinitivo)
+organizador puede: crear torneo,programar partido 
+
+diagrama de secuencia: hecho   
+
+diagrama de actividades: hecho
+
+
+Historias de usuario (6):
+quien - como (entidad)-que 
+yo ,como organizador, deseo crear un programa para gestionar torneos de futbol entre jugadores
+
+
+
+3 mockups  
+adobe xd 
+balsamiq
+canva: presentacion de dispositivos moviles 
+material design 
+
+
+CREATE TABLE software (
+    SoftwareId INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(40) UNIQUE NOT NULL,
+    Version VARCHAR (40) NOT NULL,
+    InstalatioKey VARCHAR(40)NOT NULL,
+    CantLicencias INT NOT NULL,
+    Validity DATE,
+    FOREIGN KEY (DeviceId) REFERENCES devices(Deviceid),
+    FOREIGN KEY (ProviderId) REFERENCES providers(ProviderId)
+    )ENGINE= INNODB;
+    
+CREATE TABLE provider (
+    ProviderId int PRIMARY KEY AUTO_INCREMENT,
+    Nit VARCHAR (40) UNIQUE NOT NULL,
+    CompanyName VARCHAR (40) UNIQUE NOT NULL,
+    Addres varchar (40) NOT NULL,
+    Phone varchar (40) not null,
+    Email varchar (40) not null
+    ) ENGINE =INNODB;
+    
+CREATE TABLE
